@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-areas: "n n n"    
+                         "a a a";
+    grid-template-rows: 1fr 1fr;
+}
+nav{
+    width: 100%;
+    grid-area: n;
+    position: fixed;
+    background-color: grey;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+article{
+    grid-area: a;
+}
+ul{
+    list-style-type: none;
+}
+.lego1{
+    position: relative;
+}
+.legoelem{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+}
+.lego1:hover .legoelem{
+    display: block;
+}
+a{
+    color: white;
+    border-radius: 5px;
+    padding-right: 20px;padding-left: 20px;
+    padding-top: 5px;padding-bottom: 5px;
+    background-color: rgb(156, 156, 156);
+}
+.ablak{
+    position: fixed;
+    right: 35%;
+    padding:50px;
+    background-color: rgb(152, 153, 152);
+}
